@@ -79,17 +79,17 @@ name = 'Ducky'
 my_str = 'Make School is Awesome!!!'
 
 greet(name)
-.then((greetResult) => {
-    console.log(greetResult)
-    return uppercaser(my_str);
-})
-.then((uppercaserResult) => {
-    console.log(uppercaserResult)
-    return spacer(uppercaserResult);
-})
-.then((spacerResult) => {
-    console.log(spacerResult);
-}).catch((err) => {
-    console.log('Received an error!')
-    console.log(err);
-});
+    .then((greetResult) => {
+        console.log(greetResult)
+        return uppercaser(my_str);
+    })
+    .then((uppercaserResult) => {
+        console.log(uppercaserResult)
+        return spacer(uppercaserResult);
+    })
+    .then((spacerResult) => {
+        console.log(spacerResult);
+    }).catch((err) => {
+        console.log('Received an error!')
+        console.log(err);
+    });
